@@ -1,15 +1,14 @@
 // Code your solutions in this file
 const cards = ["Guadalupe", "Ollie", "Aki"];
 
-function writeCards(cards){
+function writeCards(cards, event){
+    let arr = [];
     for (let i = 0; i < cards.length; i++){
-        console.log(`Thank you, ${cards[i]}, for the wonderful suprise gifts!`);
-    }
-
-    return cards;
+         arr.push(`Thank you, ${cards[i]}, for the wonderful ${event} gift!`);
+        }
+        return arr;
 }
 
-writeCards(cards);
 
 let integer = 10;
 
